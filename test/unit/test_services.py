@@ -22,11 +22,7 @@ def test_can_get_movie(in_memory_repo):
 
     assert movie_as_dict['title'] == 'Split'
     assert movie_as_dict['release_year'] == 2016
-    genre_name = [dictionary['name'] for dictionary in movie_as_dict['genres']]
-    assert 'Horror' in genre_name
-    actor_name = [dictionary['name'] for dictionary in movie_as_dict['actors']]
-    assert 'James McAvoy' in actor_name
-    assert 'Anya Taylor-Joy' in actor_name
+
 
 
 def test_cannot_get_movie_with_non_existent_id(in_memory_repo):

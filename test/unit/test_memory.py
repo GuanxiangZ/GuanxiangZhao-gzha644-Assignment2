@@ -67,7 +67,7 @@ def test_repository_can_get_movie_by_page(in_memory_repo):
 
 def test_get_page(in_memory_repo):
     last_movie = in_memory_repo.get_last_movie()
-    assert in_memory_repo.get_page_of_previous_movie(last_movie) == 99
+    assert in_memory_repo.get_page_of_previous_movie(last_movie) == 98
     movie = Movie("Moana", 2000)
     movie2 = Movie("aaaa", 1999)
     in_memory_repo.add_movie(movie)
