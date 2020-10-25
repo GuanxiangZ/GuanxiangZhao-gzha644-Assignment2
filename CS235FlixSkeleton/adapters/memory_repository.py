@@ -85,7 +85,7 @@ class MemoryRepository(AbstractRepository):
 
 
 def read_csv_file():
-    movie_file_reader = MovieFileCSVReader(os.path.join("E:", os.sep, "cs235", "Assignment", "CS235FlixSkeleton", "datafiles", "Data1000Movies.csv"))
+    movie_file_reader = MovieFileCSVReader(os.path.join("C:", os.sep, "COMPSCI-235","CS235FlixSkeleton", "datafiles", "Data1000Movies.csv"))
     movie_file_reader.read_csv_file()
     return movie_file_reader
 
