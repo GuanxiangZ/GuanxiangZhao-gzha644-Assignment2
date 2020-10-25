@@ -1,0 +1,20 @@
+<nav id="nav">
+
+  <h2 id="nav-header">
+    {% if 'username' in session %} Hello, {{ session['username'] }} {%
+    endif %}
+  </h2>
+  <a class="btn-nav" href="{{ url_for('home_bp.home') }}">Home</a>
+
+  <div id="nav-footer">
+    COMPSCI 235 Software Development Methodologies
+  </div>
+
+  <div>
+    <h3>
+      <a class="btn-nav" href="{{ url_for('news_bp.movies_by_page') }}">
+        Movies List
+      </a>
+    </h3>
+  </div>
+</nav>

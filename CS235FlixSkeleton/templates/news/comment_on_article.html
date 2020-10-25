@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<main id="main">
+    <header>
+        <h1>{{date}}</h1>
+    </header>
+
+    <div style="clear:both">
+        <h2>{{movie.title}}</h2>
+        <h3>Actors:{{movie.actors}}</h3>
+        <p>{{movie.description}}</p>
+        <div style="float:left">
+            {% for genre in movie.genres %}
+            <button class="btn-general-disabled" disable>{{ genre.genre_name }}</button>
+            {% endfor %}
+        </div>
+
+    </article>
+</main>
+{% endblock %}
